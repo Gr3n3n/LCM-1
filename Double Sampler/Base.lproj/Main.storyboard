@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Double_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-Za-dGe">
+                                <rect key="frame" x="20" y="354" width="420" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-YW-jxG" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="height" multiplier="1:1" id="Q1a-CZ-1nr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eef-uz-1Cf"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="M2a-Ct-Rse"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqw-4o-NBj" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="E"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVa-gM-BO8"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uEa-Ak-bPZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1G-WW-h1A" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="G"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ar-Fo-ntg"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="UYL-Cn-i0S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-zX-oxA" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="360" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="B"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kN-rv-sjT"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="pNd-Tp-BQy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oqw-4o-NBj" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="Gm7-yS-55V"/>
+                                    <constraint firstItem="g1G-WW-h1A" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="Sea-pH-Qe8"/>
+                                    <constraint firstItem="jvv-zX-oxA" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="dsa-Ds-8tO"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="f62-26-m4G">
+                                <rect key="frame" x="80" y="445" width="300" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs3-7k-VIx" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="D"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJD-nH-6Ho"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="shc-GA-sOO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-n2-UyL" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="F"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4S-z5-Fi9"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="XdV-Bv-etC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-WT-3TA" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="A"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lQ-G7-Sdz"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="6No-PW-ufz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jKy-hP-nDg">
+                                <rect key="frame" x="584" y="354" width="420" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="306-k9-25r" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLE-45-sUK"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="XGQ-Rq-LFM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-VM-P2I" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="E"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apF-dT-tiO"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="YH6-7k-1bD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-6H-n7Q" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="G"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBl-We-vUf"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="92d-xF-kdN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdW-ZD-1Nh" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="360" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="B"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtI-J9-mP8"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="lUt-6l-rR3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Y8-6H-n7Q" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="7Ao-SL-xKF"/>
+                                    <constraint firstItem="SdW-ZD-1Nh" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="Cg8-wU-Frn"/>
+                                    <constraint firstItem="zcq-VM-P2I" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="KQJ-5H-CbE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-47-qaH">
+                                <rect key="frame" x="644" y="445" width="300" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ6-cG-sBe" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="D"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mF-Ll-7ro"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="XAl-6J-eps"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGN-YC-rMW" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="F"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xP-1o-bdC"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yqh-Tv-Asg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jva-pW-GnG" customClass="PressureButton" customModule="Double_Sampler" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="A"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rw4-wf-V52"/>
+                                            <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="nDv-Rb-KNZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="YHG-q0-iq8">
+                                <rect key="frame" x="582" y="543" width="424" height="31"/>
+                                <connections>
+                                    <action selector="rightSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HcW-oT-fd7"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-hO-BHg">
+                                <rect key="frame" x="18" y="543" width="424" height="31"/>
+                                <connections>
+                                    <action selector="leftSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wh9-dC-ydc"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gtR-WT-3TA" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="0Br-iU-ySr"/>
+                            <constraint firstItem="QQ9-47-qaH" firstAttribute="top" secondItem="f62-26-m4G" secondAttribute="top" id="0kn-Yg-nIp"/>
+                            <constraint firstItem="tZ6-cG-sBe" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="1VH-he-Deg"/>
+                            <constraint firstItem="WGN-YC-rMW" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="4eV-BO-8sO"/>
+                            <constraint firstItem="ocu-hO-BHg" firstAttribute="trailing" secondItem="rWC-Za-dGe" secondAttribute="trailing" id="8VQ-Ka-R5W"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ocu-hO-BHg" secondAttribute="leading" id="9gS-8L-NO2"/>
+                            <constraint firstItem="jKy-hP-nDg" firstAttribute="top" secondItem="rWC-Za-dGe" secondAttribute="top" id="Ag3-Wd-QwD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QQ9-47-qaH" secondAttribute="trailing" constant="60" id="CLs-av-cVG"/>
+                            <constraint firstItem="LAG-n2-UyL" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="Ean-XP-pUb"/>
+                            <constraint firstItem="rWC-Za-dGe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F2A-KE-IgB"/>
+                            <constraint firstItem="ocu-hO-BHg" firstAttribute="top" secondItem="f62-26-m4G" secondAttribute="bottom" constant="38" id="FQb-A0-EBX"/>
+                            <constraint firstItem="YHG-q0-iq8" firstAttribute="trailing" secondItem="jKy-hP-nDg" secondAttribute="trailing" id="Fgn-YH-iDn"/>
+                            <constraint firstItem="fEO-YW-jxG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/17" id="L4X-vh-qCN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jKy-hP-nDg" secondAttribute="trailing" id="MdB-mO-Ajx"/>
+                            <constraint firstItem="f62-26-m4G" firstAttribute="top" secondItem="rWC-Za-dGe" secondAttribute="bottom" constant="31" id="Mtf-9L-0ud"/>
+                            <constraint firstItem="jva-pW-GnG" firstAttribute="width" secondItem="306-k9-25r" secondAttribute="width" id="QAG-p7-FRi"/>
+                            <constraint firstItem="fs3-7k-VIx" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="QVr-C4-RU1"/>
+                            <constraint firstItem="fs3-7k-VIx" firstAttribute="height" secondItem="fEO-YW-jxG" secondAttribute="height" id="Swz-pj-vJu"/>
+                            <constraint firstItem="YHG-q0-iq8" firstAttribute="leading" secondItem="jKy-hP-nDg" secondAttribute="leading" id="Vf6-bG-uFS"/>
+                            <constraint firstItem="rWC-Za-dGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZVm-6r-tOt"/>
+                            <constraint firstItem="tZ6-cG-sBe" firstAttribute="height" secondItem="306-k9-25r" secondAttribute="height" id="bkm-uj-M6O"/>
+                            <constraint firstItem="f62-26-m4G" firstAttribute="leading" secondItem="rWC-Za-dGe" secondAttribute="leading" constant="60" id="iq4-yp-zY0"/>
+                            <constraint firstItem="YHG-q0-iq8" firstAttribute="top" secondItem="QQ9-47-qaH" secondAttribute="bottom" constant="38" id="pm8-af-654"/>
+                            <constraint firstItem="306-k9-25r" firstAttribute="width" secondItem="fEO-YW-jxG" secondAttribute="width" id="rrf-tI-YXJ"/>
+                            <constraint firstItem="306-k9-25r" firstAttribute="height" secondItem="fEO-YW-jxG" secondAttribute="height" id="vbj-aE-nkY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftSlider" destination="ocu-hO-BHg" id="O7X-hB-PK4"/>
+                        <outlet property="rightSlider" destination="YHG-q0-iq8" id="Vme-Yf-WFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.984375" y="36.71875"/>
+        </scene>
+    </scenes>
+</document>

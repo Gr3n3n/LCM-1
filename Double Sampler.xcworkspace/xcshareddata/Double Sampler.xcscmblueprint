@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "540A11476B37D5A7F9A926A1204ABBA4AC277693",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "540A11476B37D5A7F9A926A1204ABBA4AC277693" : 9223372036854775807,
+    "EA073D8417520B08518155C84DF22D9C659F1801" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD1FC563-BA39-47CD-B564-E9427CADA4BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "540A11476B37D5A7F9A926A1204ABBA4AC277693" : "Double%20Sampler\/",
+    "EA073D8417520B08518155C84DF22D9C659F1801" : "SwiftMusicKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Double Sampler",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Double Sampler.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/gene\/Dropbox\/git\/Double%20Sampler.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "540A11476B37D5A7F9A926A1204ABBA4AC277693"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/gene\/Dropbox\/git\/SwiftMusicKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA073D8417520B08518155C84DF22D9C659F1801"
+    }
+  ]
+}

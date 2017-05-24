@@ -1,0 +1,16 @@
+# file: .travis.yml
+language: objective-c
+osx_image: xcode8
+xcode_project: Double Sampler
+
+before_install:
+- brew update
+- brew outdated xctool || brew upgrade xctool
+- gem install xcpretty -N
+
+script:
+
+- xctool -project Double Sampler.xcodeproj  -scheme "Double Sampler" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO test | xcpretty -c
+
+
+# http://docs.travis-ci.com/user/languages/objective-c/

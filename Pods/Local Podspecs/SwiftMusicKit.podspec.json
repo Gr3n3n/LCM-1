@@ -1,0 +1,45 @@
+{
+  "name": "SwiftMusicKit",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftMusicKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/genedelisa/SwiftMusicKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "genedelisa": "gene@rockhoppertech.com"
+  },
+  "social_media_url": "https://twitter.com/GeneDeLisaDev",
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.11"
+  },
+  "source": {
+    "path": "/Users/gene/Development/xcode/gene/Swift/Music/SwiftMusicKit"
+  },
+  "source_files": [
+    "SwiftMusicKit/SwiftMusicKit_CommonSource",
+    "SwiftMusicKit/SwiftMusicKit_CommonSource/**/*.{swift,h,m}"
+  ],
+  "frameworks": [
+    "AVFoundation",
+    "CoreMIDI",
+    "AudioToolbox",
+    "CoreAudio"
+  ],
+  "resource_bundles": {
+    "SwiftMusicKit": [
+      "SwiftMusicKit/Assets/**/*.{xml,SF2}"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3.0"
+  },
+  "dependencies": {
+    "XCGLogger": [
+      "~> 4.0.0"
+    ]
+  }
+}
