@@ -1,4 +1,4 @@
-#Double Sampler
+# Double Sampler
 
 The button layout is proportial to scren size. 
 Each button constraint is tied to the first C button on the left.
